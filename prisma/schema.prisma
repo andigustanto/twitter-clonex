@@ -15,12 +15,12 @@ model Tweet {
     id String @id @default(uuid())
     userId String
     content String
-    createAt DateTime @default(now())
+    createdAt DateTime @default(now())
 
     user User @relation(fields: [userId], references: [id], onDelete: Cascade)
     likes Like[]
 
-    @@unique([createAt, id])
+    @@unique([createdAt, id])
     @@index([userId])
 }
 

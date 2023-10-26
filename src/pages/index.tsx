@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import { NewTweetForm } from "~/components/NewTweetForm";
-import { InfiniteTweetList } from "~/components/infiniteTweetList";
+import { InfiniteTweetList } from "~/components/InfiniteTweetList";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {

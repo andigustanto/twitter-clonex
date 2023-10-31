@@ -91,7 +91,7 @@ model User {
     tweets        Tweet[]
     likes         Like[]
     followers User[] @relation(name: "Followers")
-    followa User[] @relation(name: "Followers")
+    follows User[] @relation(name: "Followers")
 }
 
 model VerificationToken {
